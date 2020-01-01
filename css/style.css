@@ -5,12 +5,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'LinuxLibertineMonoOMono';
-    src: url('https://fontlibrary.org/assets/fonts/linux-libertine/41c74aace28c60327320360d9fca54c0/20a19eb78133fca70229dc575fd91355/LinuxLibertineMonoOMono.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'LinuxBiolinumOBold';
@@ -29,6 +23,14 @@
 @font-face {
     font-family: 'LinuxBiolinumORegular';
     src: url('https://fontlibrary.org/assets/fonts/linux-biolinum/bf09d0a7996862dc34102dc51c500ace/d0073c4d7149ec31d8ebf8eea691743c/LinuxBiolinumORegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FantasqueSansMonoRegular';
+    src: url('https://fontlibrary.org/assets/fonts/fantasque-sans-mono/99bd6bf2755c7f6b5f5c62daf6807aea/f47be69e1b8c931931d2da5b5e9e9797/FantasqueSansMonoRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -55,7 +57,7 @@ H2 {
 
 H3 {
     font-family: 'LinuxLibertineDisplayORegular', serif;
-    margin: 0.5em 0em;
+    margin: 1em 0em 0em 0em;
     font-size:120%;
 }
 
@@ -69,7 +71,7 @@ H5 {
     margin: 1em 3em;
 }
 
-ul, ol {
+ul, ol, dl {
     margin-top: 10px;
     padding: 0.2em 0em;
 }
@@ -77,6 +79,27 @@ ul, ol {
 li {
     margin-left: 35px;
     margin-bottom: 10px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+
+dt {
+    float: left;
+    clear: left;
+    width: 60px;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+}
+dt::after {
+    content: ":";
+}
+dd {
+    margin: 0 0 0 70px;
+    padding: 0 0 0.5em 0;
 }
 
 .alert {
@@ -109,23 +132,22 @@ A:visited {
 }
 
 code, samp, kbd {
-    font-family: "LinuxLibertineMonoOMono", monospace, sans-serif;
+    font-family: "FantasqueSansMonoRegular", monospace, sans-serif;
     text-align: left;
     color: #555;
 }
 pre code {
-    font-family: "LinuxLibertineMonoOMono", monospace, sans-serif;
+    font-family: "FantasqueSansMonoRegular", monospace, sans-serif;
     line-height: 1.6em;
     font-size: 10px;
 }
 pre {
-    font-family: "LinuxLibertineMonoOMono", monospace, sans-serif;
+    font-family: "FantasqueSansMonoRegular", monospace, sans-serif;
     padding: 0.1em 0.5em 0.3em 0.7em;
     border-left: 11px solid #ccc;
-    margin: 1.7em 0 1.7em 0.3em;
-    font-size: small;
+    margin: 1em 0 1em 0.3em;
     overflow: auto;
-    width: 93%;
+
 }
 /* target IE7 and IE6 */
 *:first-child+html pre {
